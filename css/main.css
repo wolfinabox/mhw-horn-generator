@@ -1,0 +1,16 @@
+.note_icon{
+    
+}
+html{
+    background-color: black;
+}
+h1,h2,h3,p,a,li{
+    color:white;
+}
+li{
+    text-indent:20px;
+}
+
+p{
+    display:inline;
+}
