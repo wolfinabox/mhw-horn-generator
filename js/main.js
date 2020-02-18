@@ -1,4 +1,4 @@
-API_URL = "http://mhw-horn-generator-api.herokuapp.com/api/v1"
+API_URL = "https://mhw-horn-generator-api.herokuapp.com/api/v1"
 
 $(document).ready(function () {
     $('#submit_button').prop('disabled', true);
