@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>MHW Hunting Horn Generator</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/from_wiki.css'>
-    <script src="js/libs/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
     <script src='js/main.js'></script>
 </head>
+
 <body>
     <h1>Hunting horn generator</h1>
-    <select id="effect_selector" name="effect_selector" disabled=true multiple>
-        <option>Getting melodies...</option>
-    </select>
-    <input type="submit" name="submit_button" id="submit_button" value="Search" disabled=true>
-    <div id='horns_div'></div>
+    <div class="row">
+        <div class="column">
+            <h2>Desired effects</h2>
+            <select id="effect_selector" name="effect_selector" disabled=true multiple>
+                <option>Getting melodies...</option>
+            </select>
+            <input type="submit" name="submit_button" id="submit_button" value="Search" disabled=true>
+        </div>
+        <div class="column">
+            <h2>Horns</h2>
+            <div id='horns_div' ></div>
+        </div>
+    </div>
+
+
 </body>
+<footer>
+    <a href="https://github.com/wolfinabox/mhw-horn-generator">Website Source</a>
+    <a href="https://github.com/wolfinabox/flask-mainapp">API Source</a>
+</footer>
 </html>

@@ -16,6 +16,6 @@
     "python.venvPath": "{workspaceFolder}",
     "python.pythonPath": "env\\Scripts\\python.exe",
     "files.associations": {
-        "*.html": "jinja-html"
+        "*.html": "html"
     },
 }
