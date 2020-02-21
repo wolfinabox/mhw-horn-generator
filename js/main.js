@@ -1,4 +1,4 @@
-API_URL = "http://127.0.0.1:5000/mhw_horn_generator/api/v1/"
+API_URL = "https://wolfinabox.herokuapp.com/mhw_horn_generator/api/v1/"
 function sort_horns(horns, field) {
     field=field.toLowerCase()
     if (field == 'Alphabetical' || !(field in horns[0]))
