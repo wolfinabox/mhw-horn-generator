@@ -2,13 +2,12 @@ const API_URL = "https://wolfinabox.herokuapp.com/mhw_horn_generator/api/v1/"
 //const API_URL = "http://127.0.0.1:5000/mhw_horn_generator/api/v1/"
 function sort_horns(horns, field) {
     field = field.toLowerCase()
-    if (field == 'Alphabetical' || !(field in horns[0]))
-        return horns;
-
+    if (field == 'Alphabetical')
+        field = 'Name';
     return horns.sort((a, b) => (parseInt(a[field]) < parseInt(b[field])) ? 1 : ((parseInt(a[field]) > parseInt(b[field])) ? -1 : 0))
 }
 
-function display_horns(data,effects) {
+function display_horns(data, effects) {
     if (!data) return;
     let horns = data['response']['horns']
     $('#horns_amt').text('Horns: ' + horns.length)
