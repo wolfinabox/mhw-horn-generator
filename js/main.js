@@ -2,8 +2,8 @@ const API_URL = "https://wolfinabox.herokuapp.com/mhw_horn_generator/api/v1/"
 //const API_URL = "http://127.0.0.1:5000/mhw_horn_generator/api/v1/"
 function sort_horns(horns, field) {
     field = field.toLowerCase()
-    if (field == 'Alphabetical')
-        field = 'Name';
+    if (field == 'alphabetical')
+        field = 'name';
     return horns.sort((a, b) => (parseInt(a[field]) < parseInt(b[field])) ? 1 : ((parseInt(a[field]) > parseInt(b[field])) ? -1 : 0))
 }
 
